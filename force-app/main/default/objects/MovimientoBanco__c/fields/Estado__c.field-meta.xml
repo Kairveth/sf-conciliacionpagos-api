@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <label>Estado</label>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+        <value><fullName>Pendiente</fullName><default>true</default><label>Pendiente</label></value>
+        <value><fullName>Casado</fullName><default>false</default><label>Casado</label></value>
+        <value><fullName>Sin factura</fullName><default>false</default><label>Sin factura</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

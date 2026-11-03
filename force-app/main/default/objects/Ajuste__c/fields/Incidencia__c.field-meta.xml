@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incidencia__c</fullName>
+    <label>Incidencia</label>
+    <type>Lookup</type>
+    <referenceTo>Incidencia__c</referenceTo>
+    <relationshipLabel>Ajustes</relationshipLabel>
+    <relationshipName>Ajustes</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+</CustomField>

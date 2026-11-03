@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <label>Tipo</label>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+        <value><fullName>Tarjeta</fullName><default>true</default><label>Tarjeta</label></value>
+        <value><fullName>Transferencia</fullName><default>false</default><label>Transferencia</label></value>
+        <value><fullName>Devolución</fullName><default>false</default><label>Devolución</label></value>
+        <value><fullName>Contracargo</fullName><default>false</default><label>Contracargo</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

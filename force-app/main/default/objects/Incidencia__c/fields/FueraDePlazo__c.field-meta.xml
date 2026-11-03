@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FueraDePlazo__c</fullName>
+    <label>Fuera de plazo</label>
+    <type>Checkbox</type>
+    <formula>AND(NOT(ISPICKVAL(Estado__c, "Cerrada")), NOT(ISPICKVAL(Estado__c, "Resuelta")), HorasAbierta__c &gt; 48)</formula>
+</CustomField>

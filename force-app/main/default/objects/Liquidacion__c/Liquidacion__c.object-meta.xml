@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Liquidación</label>
+    <pluralLabel>Liquidaciones</pluralLabel>
+    <nameField>
+        <displayFormat>LIQ-{0000}</displayFormat>
+        <label>Número de liquidación</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

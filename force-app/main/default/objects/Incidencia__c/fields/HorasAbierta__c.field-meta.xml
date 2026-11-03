@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HorasAbierta__c</fullName>
+    <label>Horas abierta</label>
+    <type>Number</type>
+    <precision>9</precision>
+    <scale>1</scale>
+    <formula>(NOW() - CreatedDate) * 24</formula>
+</CustomField>

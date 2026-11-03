@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Ajuste</label>
+    <pluralLabel>Ajustes</pluralLabel>
+    <nameField>
+        <displayFormat>AJ-{0000}</displayFormat>
+        <label>Número de ajuste</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Ajuste_Requiere_Incidencia</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Incidencia__c)</errorConditionFormula>
+        <errorMessage>Un ajuste necesita una incidencia de origen.</errorMessage>
+    </validationRules>
+</CustomObject>

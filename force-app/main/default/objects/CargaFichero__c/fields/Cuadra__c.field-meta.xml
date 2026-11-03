@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuadra__c</fullName>
+    <label>Cuadra</label>
+    <type>Checkbox</type>
+    <formula>AND(LineasCargadas__c = LineasDeclaradas__c, ROUND(ImporteCargado__c - ImporteDeclarado__c, 2) = 0)</formula>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LineasCargadas__c</fullName>
+    <label>Líneas cargadas</label>
+    <type>Summary</type>
+    <summaryForeignKey>LineaFichero__c.CargaFichero__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Number</type>
+    <precision>9</precision>
+    <scale>0</scale>
+</CustomField>

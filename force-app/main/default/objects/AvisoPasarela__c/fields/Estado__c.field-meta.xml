@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado__c</fullName>
+    <label>Estado</label>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+        <value><fullName>Recibido</fullName><default>true</default><label>Recibido</label></value>
+        <value><fullName>Procesado</fullName><default>false</default><label>Procesado</label></value>
+        <value><fullName>Duplicado</fullName><default>false</default><label>Duplicado</label></value>
+        <value><fullName>Error</fullName><default>false</default><label>Error</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

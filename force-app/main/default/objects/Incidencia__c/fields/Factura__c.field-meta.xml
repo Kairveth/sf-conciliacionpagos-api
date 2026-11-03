@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Factura__c</fullName>
+    <label>Factura</label>
+    <type>Lookup</type>
+    <referenceTo>Factura__c</referenceTo>
+    <relationshipLabel>Incidencias</relationshipLabel>
+    <relationshipName>Incidencias</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+</CustomField>

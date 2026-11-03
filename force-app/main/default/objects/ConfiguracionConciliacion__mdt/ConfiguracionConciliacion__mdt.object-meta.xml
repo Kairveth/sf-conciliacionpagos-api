@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Parámetros de conciliación por entorno.</description>
+    <label>Configuración de conciliación</label>
+    <pluralLabel>Configuraciones de conciliación</pluralLabel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Tolerancia__c</fullName>
+        <label>Tolerancia</label>
+        <precision>5</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>VentanaDias__c</fullName>
+        <label>Ventana en días</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>DiasPlazoAbono__c</fullName>
+        <label>Días de plazo de abono</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>DiasPurga__c</fullName>
+        <label>Días de purga de detalle</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>MesesAnonimizacion__c</fullName>
+        <label>Meses hasta anonimizar</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+</CustomObject>
