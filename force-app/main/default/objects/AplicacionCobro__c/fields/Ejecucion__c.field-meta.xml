@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ejecucion__c</fullName>
+    <label>Ejecución</label>
+    <type>Lookup</type>
+    <referenceTo>EjecucionConciliacion__c</referenceTo>
+    <relationshipLabel>Aplicaciones</relationshipLabel>
+    <relationshipName>Aplicaciones</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+</CustomField>

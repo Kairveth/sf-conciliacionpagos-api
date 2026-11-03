@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Aviso de pasarela</label>
+    <pluralLabel>Avisos de pasarela</pluralLabel>
+    <nameField>
+        <displayFormat>AV-{00000}</displayFormat>
+        <label>Número de aviso</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

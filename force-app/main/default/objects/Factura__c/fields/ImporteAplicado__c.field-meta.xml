@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImporteAplicado__c</fullName>
+    <label>Importe aplicado</label>
+    <type>Summary</type>
+    <summaryForeignKey>AplicacionCobro__c.Factura__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <summarizedField>AplicacionCobro__c.Importe__c</summarizedField>
+    <type>Currency</type>
+    <precision>16</precision>
+    <scale>2</scale>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Incidencia</label>
+    <pluralLabel>Incidencias</pluralLabel>
+    <nameField>
+        <displayFormat>INC-{00000}</displayFormat>
+        <label>Número de incidencia</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Incidencia_Requiere_Origen</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISBLANK(Factura__c), ISBLANK(Cobro__c), ISBLANK(MovimientoBanco__c), ISBLANK(Liquidacion__c))</errorConditionFormula>
+        <errorMessage>La incidencia necesita al menos un objeto de origen.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incidencia_Cerrar_Escalada</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISCHANGED(Estado__c), ISPICKVAL(Estado__c, "Cerrada"), NOT($Permission.Conciliacion_CerrarEscaladas))</errorConditionFormula>
+        <errorMessage>Solo el responsable puede cerrar una incidencia.</errorMessage>
+    </validationRules>
+</CustomObject>

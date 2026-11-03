@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Movimiento bancario</label>
+    <pluralLabel>Movimientos bancarios</pluralLabel>
+    <nameField>
+        <displayFormat>MOV-{0000000}</displayFormat>
+        <label>Número de movimiento</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

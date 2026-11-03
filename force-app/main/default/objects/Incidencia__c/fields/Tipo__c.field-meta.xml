@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <label>Tipo</label>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+        <value><fullName>Sin referencia</fullName><default>true</default><label>Sin referencia</label></value>
+        <value><fullName>Importe distinto</fullName><default>false</default><label>Importe distinto</label></value>
+        <value><fullName>Ambigüedad</fullName><default>false</default><label>Ambigüedad</label></value>
+        <value><fullName>Reparto incompleto</fullName><default>false</default><label>Reparto incompleto</label></value>
+        <value><fullName>Sobrepago</fullName><default>false</default><label>Sobrepago</label></value>
+        <value><fullName>Abono no recibido</fullName><default>false</default><label>Abono no recibido</label></value>
+        <value><fullName>Importe cambiado</fullName><default>false</default><label>Importe cambiado</label></value>
+        <value><fullName>Movimiento sin factura</fullName><default>false</default><label>Movimiento sin factura</label></value>
+        <value><fullName>Liquidación descuadrada</fullName><default>false</default><label>Liquidación descuadrada</label></value>
+        <value><fullName>Divisa no soportada</fullName><default>false</default><label>Divisa no soportada</label></value>
+        <value><fullName>Otro</fullName><default>false</default><label>Otro</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
