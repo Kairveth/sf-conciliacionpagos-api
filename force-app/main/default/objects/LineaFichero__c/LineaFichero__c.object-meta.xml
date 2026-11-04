@@ -8,5 +8,5 @@
         <label>Número de línea</label>
         <type>AutoNumber</type>
     </nameField>
-    <sharingModel>Read</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

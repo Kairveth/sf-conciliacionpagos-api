@@ -6,7 +6,4 @@
     <summaryForeignKey>AplicacionCobro__c.Cobro__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <summarizedField>AplicacionCobro__c.Importe__c</summarizedField>
-    <type>Currency</type>
-    <precision>16</precision>
-    <scale>2</scale>
 </CustomField>

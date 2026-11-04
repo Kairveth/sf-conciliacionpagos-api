@@ -5,7 +5,4 @@
     <type>Summary</type>
     <summaryForeignKey>LineaFichero__c.CargaFichero__c</summaryForeignKey>
     <summaryOperation>count</summaryOperation>
-    <type>Number</type>
-    <precision>9</precision>
-    <scale>0</scale>
 </CustomField>
