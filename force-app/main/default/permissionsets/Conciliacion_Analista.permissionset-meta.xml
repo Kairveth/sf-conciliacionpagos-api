@@ -301,16 +301,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AplicacionCobro__c.Factura__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AplicacionCobro__c.Cobro__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>AplicacionCobro__c.Importe__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -327,11 +317,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>AplicacionCobro__c.ClaveUnica__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Ajuste__c.Factura__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
