@@ -8,7 +8,7 @@
         <label>Número de ajuste</label>
         <type>AutoNumber</type>
     </nameField>
-    <sharingModel>Read</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Ajuste_Requiere_Incidencia</fullName>
         <active>true</active>

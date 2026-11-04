@@ -6,7 +6,4 @@
     <summaryForeignKey>LineaFichero__c.CargaFichero__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <summarizedField>LineaFichero__c.Importe__c</summarizedField>
-    <type>Currency</type>
-    <precision>16</precision>
-    <scale>2</scale>
 </CustomField>
