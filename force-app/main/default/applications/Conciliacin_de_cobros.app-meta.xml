@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Conciliación de cobros</label>
+    <navType>Standard</navType>
+    <tabs>Factura__c</tabs>
+    <tabs>Cobro__c</tabs>
+    <tabs>AplicacionCobro__c</tabs>
+    <tabs>Ajuste__c</tabs>
+    <tabs>Incidencia__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Conciliaci_n_de_cobros_UtilityBar</utilityBar>
+</CustomApplication>
