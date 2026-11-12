@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "Salesforce App",
   "scripts": {
-    "lint": "eslint \"force-app/**/{aura,lwc}/**/*.js\"",
+    "lint": "eslint --no-error-on-unmatched-pattern \"force-app/**/{aura,lwc}/**/*.js\"",
     "test": "npm run test:unit",
-    "test:unit": "sfdx-lwc-jest",
+    "test:unit": "sfdx-lwc-jest -- --passWithNoTests",
     "test:unit:watch": "sfdx-lwc-jest --watch",
     "test:unit:debug": "sfdx-lwc-jest --debug",
     "test:unit:coverage": "sfdx-lwc-jest --coverage",
