@@ -14,9 +14,6 @@ TABS = ["Factura__c", "Cobro__c", "AplicacionCobro__c", "Ajuste__c", "Incidencia
 APP = "Conciliacin_de_cobros"
 LECTURA = ["Factura__c", "Cobro__c", "Liquidacion__c", "CargaFichero__c", "AvisoPasarela__c"]
 
-# Permisos que el PS concede y que ninguna historia justifica todavía: decisión pendiente, no norma
-PENDIENTE = {"Integracion": {"editar": {"Cobro__c", "Liquidacion__c"}}}
-
 # Esperado según doc 06, sección 5 (y tabla de doc 07)
 ESPERADO = {
     "Integracion": {
@@ -74,14 +71,8 @@ def comprobar(rol, nombre_ps):
     obj, tabs, apps, custom = leer_ps(nombre_ps)
     resultados = []
 
-    def anotar(etiqueta, esperado, real, pendiente=False):
-        if esperado == real:
-            estado = "PASA"
-        elif pendiente and real and not esperado:
-            estado = "PENDIENTE"
-        else:
-            estado = "FALLA"
-        resultados.append((etiqueta, esperado, real, estado))
+    def anotar(etiqueta, esperado, real):
+        resultados.append((etiqueta, esperado, real, "PASA" if esperado == real else "FALLA"))
 
     anotar("App Conciliación de cobros", esp["app"], apps.get(APP, False))
     for t in TABS:
@@ -90,8 +81,7 @@ def comprobar(rol, nombre_ps):
         anotar(f"Leer {o}", o in esp["leer"], obj.get(o, {}).get("leer", False))
     for o in sorted(set(LECTURA) | {"Incidencia__c", "Ajuste__c", "AplicacionCobro__c", "Liquidacion__c"}):
         anotar(f"Crear {o}", o in esp["crear"], obj.get(o, {}).get("crear", False))
-        pend = o in PENDIENTE.get(rol, {}).get("editar", set())
-        anotar(f"Editar {o}", o in esp["editar"], obj.get(o, {}).get("editar", False), pend)
+        anotar(f"Editar {o}", o in esp["editar"], obj.get(o, {}).get("editar", False))
     anotar("Custom Conciliacion_CerrarEscaladas", esp["custom"], custom.get("Conciliacion_CerrarEscaladas", False))
     return resultados
 
@@ -101,11 +91,10 @@ def main():
     for rol, ps in ROLES.items():
         filas = comprobar(rol, ps)
         malas = [f for f in filas if f[3] == "FALLA"]
-        pendientes = [f for f in filas if f[3] == "PENDIENTE"]
         fallos += len(malas)
-        print(f"== {rol} ({ps}): {len(filas) - len(malas) - len(pendientes)}/{len(filas)} PASA")
-        for etiqueta, esperado, real, estado in malas + pendientes:
-            print(f"   {estado:<10} {etiqueta}: esperado={'Sí' if esperado else 'No'}, PS={'Sí' if real else 'No'}")
+        print(f"== {rol} ({ps}): {len(filas) - len(malas)}/{len(filas)} PASA")
+        for etiqueta, esperado, real, estado in malas:
+            print(f"   FALLA  {etiqueta}: esperado={'Sí' if esperado else 'No'}, PS={'Sí' if real else 'No'}")
     print(f"\nTotal FALLA: {fallos}")
     return 1 if fallos else 0
 

@@ -101,5 +101,8 @@ Una ronda por rol, en este orden: Integración, Analista, Responsable, Auditor y
 
 ## Pendiente
 
-- Pendiente de decisión: el PS de Integración concede editar Cobro y Liquidación, y ninguna historia lo exige. El script los marca PENDIENTE, no FALLA. Decidir: quitar el permiso del PS, o justificarlo con una historia. Hasta entonces la fila 17 falla en Integración por diseño.
 - La regla que impide cerrar una escalada, `Incidencia_Cerrar_Escalada`, existe en la org pero no en el repo. La fila 14 prueba la org, no el repo, hasta que traigamos esa regla.
+
+## Validaciones
+
+- 2026-11-12: `Conciliacion_Integracion` sin edición de Cobro__c ni Liquidacion__c. Job `0Afg800000Lj7MDCAZ` (validate, no deploy), 17/17 tests de la org. Caduca hacia el 22-11.
