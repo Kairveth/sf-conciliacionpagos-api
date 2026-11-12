@@ -1,11 +1,11 @@
-# List files or directories below to ignore them when running prettier
-# More information: https://prettier.io/docs/en/ignore.html
-#
-
+# Ficheros que Prettier no reformatea. Cada línea evita ruido en los diffs.
 **/staticresources/**
 .localdevserver
 .sfdx
 .sf
 .vscode
-
-coverage/
+.husky
+node_modules
+coverage
+package-lock.json
+postman

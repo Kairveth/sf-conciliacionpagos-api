@@ -1,0 +1,10 @@
+# Fin de línea LF en el repositorio, sea cual sea el sistema del que se edite.
+* text=auto eol=lf
+
+# Binarios: Git no intenta tocarlos.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.woff2 binary
+*.zip binary
