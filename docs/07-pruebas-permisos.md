@@ -106,3 +106,4 @@ Una ronda por rol, en este orden: Integración, Analista, Responsable, Auditor y
 ## Validaciones
 
 - 2026-11-12: `Conciliacion_Integracion` sin edición de Cobro__c ni Liquidacion__c. Job `0Afg800000Lj7MDCAZ` (validate, no deploy), 17/17 tests de la org. Caduca hacia el 22-11.
+- 2026-11-13: deploy real del PS `Conciliacion_Integracion` a `dev-candidaturas` con `sf project deploy quick`. Deploy `0Afg800000LpzAECAZ`, correcto.
