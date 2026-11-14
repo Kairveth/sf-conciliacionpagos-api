@@ -125,8 +125,8 @@ Antes de cada prueba de permisos, comprobar que el usuario tiene el Permission S
 
 | Usuario | Puede ver | Puede crear | Puede editar | Puede cerrar escalada |
 |---|---|---|---|---|
-| Integración | Staging, facturas, cobros, liquidaciones | Staging y facturas | No | No |
-| Analista | Todo el modelo | Aplicaciones y ajustes | Incidencias | No |
+| Integración | Staging, avisos de pasarela, facturas, cobros, liquidaciones | Staging (CargaFichero, LineaFichero, AvisoPasarela), facturas, cobros y liquidaciones (H1.1, H1.3, H1.4, H2.1, H3.1) | Facturas (H3.2) | No |
+| Analista | Modelo de conciliación, sin staging ni avisos de pasarela | Aplicaciones y ajustes | Incidencias | No |
 | Responsable | Todo el modelo | Aplicaciones y ajustes | Incidencias | Sí |
 | Auditor | Todo el modelo | No | No | No |
 | Sin permiso | Nada | No | No | No |

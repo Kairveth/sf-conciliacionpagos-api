@@ -9,3 +9,13 @@ node_modules
 coverage
 package-lock.json
 postman
+
+# Metadata XML: la fija el CLI de Salesforce, no se formatea a mano
+force-app/**/*.xml
+
+# Documentación y textos: se revisan como prosa, no con Prettier
+docs/
+README.md
+CLAUDE.md
+CLAUDE.local.md
+.claude/
