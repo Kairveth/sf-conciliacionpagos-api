@@ -98,6 +98,8 @@ Una ronda por rol, en este orden: Integración, Analista, Responsable, Auditor y
 
 1. El doc 06 se ajustó a las historias de requisitos. Integración crea staging, facturas, cobros y liquidaciones (H1.1, H1.3, H1.4, H2.1, H3.1) y edita facturas (H3.2).
 2. Analista no lee CargaFichero, LineaFichero ni AvisoPasarela. Es intencionado: el analista trabaja con el modelo de conciliación, no con el staging.
+3. Integración solo lee Account. Ninguna historia crea ni edita cuentas: H3.1 rechaza la fila con cliente vacío, así que la cuenta ya existe. `IdClienteErp__c` queda en lectura y sirve para referenciar la cuenta en las cargas.
+4. El usuario de prueba tiene el perfil estándar Standard Platform User, que da la app y las pestañas Facturas y Cobros aunque el PS de Integración no las dé. No se toca el perfil: las filas 1 y 2 de Integración se comprueban con `scripts/permisos/contrastar_ps.py` sobre el XML.
 
 ## Pendiente
 
@@ -107,3 +109,5 @@ Una ronda por rol, en este orden: Integración, Analista, Responsable, Auditor y
 
 - 2026-11-12: `Conciliacion_Integracion` sin edición de Cobro__c ni Liquidacion__c. Job `0Afg800000Lj7MDCAZ` (validate, no deploy), 17/17 tests de la org. Caduca hacia el 22-11.
 - 2026-11-13: deploy real del PS `Conciliacion_Integracion` a `dev-candidaturas` con `sf project deploy quick`. Deploy `0Afg800000LpzAECAZ`, correcto.
+- 2026-11-17: page layouts de los 11 objetos con todos sus campos y PS `Conciliacion_Integracion` sin crear ni editar Account. Validate `0Afg800000MMEKbCAP` y `deploy quick`.
+- 2026-11-17: ronda de Integración con el usuario Analista. Cobro `COB-0000001` y Liquidación `LIQ-0000` se leen con todos sus campos y sin botón Editar (filas 4, 5 y 17 PASA). Filas 1 y 2: ver decisión 4.
